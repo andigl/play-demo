@@ -11,3 +11,10 @@ libraryDependencies ++= Seq(
   cache,
   javaWs
 )
+
+routesGenerator := InjectedRoutesGenerator
+
+enablePlugins(DebianPlugin)
+maintainer := "andigl <andigl@gmail.com>"
+packageSummary := "My custom package"
+packageDescription := "Package"
